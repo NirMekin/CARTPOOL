@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="UTF-8">
         <title>CARTPOOL</title>
+        <script src="includes/jquery-3.1.1.min.js"></script>
         <link rel="stylesheet" href="includes/style.css">
+        <script src="includes/login.js"></script>
     </head>
     <body>
         <h1>Welcome To CARTPOOL</h1>
 
-        <form method="get" action="#">
+        <form method="POST" action="#">
 
             <section id="startFlow">
                 <img src="images/CartPoolLogo.png">
                 <label>
                     <select name="client">
-                        <option value="1">Flow A</option>
-                        <option value="2">Flow B</option>
-                        <option value="3">Flow C</option>
+                        <option value="111">Flow A</option>
+                        <option value="222" >Flow B</option>
+                        <!--<option value="3">Flow C</option>-->
                     </select>
                 </label>
+                <label><input type="submit" value="LOGIN"></label>
             </section>
         </form>
     </body>

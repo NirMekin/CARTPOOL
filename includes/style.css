@@ -121,6 +121,7 @@ header,nav,main,footer,aside,section,article{
     }
     nav section:first-child:hover{
         background-color: grey;
+        background-image: url("../images/iconHamburger2.png");
         transition: 2s;
     }
 
@@ -128,6 +129,7 @@ header,nav,main,footer,aside,section,article{
         display: block;
         animation: hamburgerListOpen 1s;
         animation-iteration-count: 1;
+        z-index: 4;
     }
 
     @keyframes hamburgerListOpen {
@@ -168,12 +170,12 @@ header,nav,main,footer,aside,section,article{
 
 
     nav li:first-child a:first-child{
-        background: url("../images/iconHome.png") no-repeat center;
+        background: url("../images/iconLogout.png") no-repeat center;
         background-size: 90%;
         float: right;
     }
     nav li:first-child a:nth-child(2){
-        background: url("../images/iconInfo.png") no-repeat center;
+        background: url("../images/iconSettings.png") no-repeat center;
         margin-left: 2.5%;
         background-size: 90%;
         float: left;
@@ -222,7 +224,147 @@ header,nav,main,footer,aside,section,article{
         background-size: 100%;
         color: #7a7a7a;
     }
+    #selcetMethod{
+        width: 85%;
+        position: relative;
+        left: 5%;
+    }
+    #selcetMethod span{
+        position: relative;
+        display: block;
+        text-align: center;
+        top:78%;
+        font-family: Arial;
+        z-index: 2;
+    }
+    #selcetMethod a{
+        display: block;
+        width: 40%;
+        height: 100px;
+        float: left;
+        margin-left: 9%;
+        margin-bottom: 2%;
+        margin-top: 10%;
+        background: white no-repeat;
+        border-radius: 4px;
+        border:1px black solid;
+        background-size: 35%;
+        background-position: center;
+        text-decoration: none;
+        color: black;
+    }
+    #selcetMethod a:first-child{
+        background-image: url("../images/iconList.png");
 
+    }
+    #selcetMethod a:nth-child(2){
+        background-image: url("../images/iconSale.png");
+    }
+    #selcetMethod a:nth-child(3){
+        background-image: url("../images/favoriteIcon.png");
+    }
+    #selcetMethod a:nth-child(4){
+        background-image: url("../images/cartIcon.png");
+    }
+
+    #lightbox{
+        top: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.3);
+        display: none;
+        width:100%;
+        height: 750px;
+    }
+    #lightOn{
+        position: relative;
+        top:18%;
+        left:20%;
+        padding-top: 10px;
+        background: lightgrey;
+        border-radius: 5px;
+        width:65%;
+        height: 250px;
+        z-index: 40;
+    }
+
+    #lightOn h2{
+        text-align: center;
+    }
+    #lightOn button:first-child{
+        position: absolute;
+        border-radius: 50%;
+        left:102%;
+        top:-2.5%;
+        width: 30px;
+        height: 30px;
+    }
+    #lightOn h2:nth-child(3){
+        margin-bottom: 35%;
+    }
+
+    #lightOn button{
+        position: relative;
+        left: 20%;
+        height: 45px;
+        margin-right: 5%;
+        width: 25%;
+        font-size: 110%;
+        background: white;
+        border-radius: 15%;
+    }
+    #lightOn span{
+        font-family: "Arial Black";
+    }
+
+    #lightOn button a{
+        text-decoration: none;
+    }
+    .yesButton{
+        color: green;
+    }
+    .noButton{
+        color: red;
+    }
+    .addList{
+        margin-top:10%;
+        list-style: none;
+        width:100%;
+    }
+    .addList li{
+        padding-top: 15px;
+        height: 40px;
+        padding-left: 5px;
+        font-family: Arial;
+        font-size: 120%;
+    }
+    .addList article{
+        width:20px;
+        height: 20px;
+        background: white;
+        border-radius: 2px;
+        border:1px solid black;
+        float: right;
+        margin-right: 3%;
+        text-align: center;
+        font-size: 90%;
+    }
+    .addList button{
+        width:32px;
+        height: 32px;
+        border-radius: 50%;
+        position: absolute;
+
+        font-size: 130%;
+        color: white;
+    }
+    .addList button:first-child{
+        background: orange;
+        left: 35%;
+    }
+    .addList button:nth-child(2){
+        background: red;
+        left: 55%;
+    }
 }
 
 @media (min-width:737px) {

@@ -1,9 +1,11 @@
 $(document).ready(function () {
 
-    $(".showLightBox").onclick = addEventListener("click",addLightBox);
-
-    var addLightBox = function () {
-        var getDisplay = $()
-    }
+    $(".showLightBox").bind('click',function () {
+        // $("#lightbox").css('display','block');
+        $("#lightbox").show(200);
+    })
+    $("button")[0].addEventListener('click',function () {
+        $("#lightbox").hide(200);
+    })
 
 })

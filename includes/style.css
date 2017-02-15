@@ -225,9 +225,9 @@ header,nav,main,footer,aside,section,article{
         color: #7a7a7a;
     }
     #selcetMethod{
-        width: 75%;
+        width: 85%;
         position: relative;
-        left: 15%;
+        left: 5%;
     }
     #selcetMethod span{
         position: relative;
@@ -239,7 +239,7 @@ header,nav,main,footer,aside,section,article{
     }
     #selcetMethod a{
         display: block;
-        width: 35%;
+        width: 40%;
         height: 100px;
         float: left;
         margin-left: 9%;
@@ -290,8 +290,15 @@ header,nav,main,footer,aside,section,article{
     #lightOn h2{
         text-align: center;
     }
-
-    #lightOn h2:nth-child(2){
+    #lightOn button:first-child{
+        position: absolute;
+        border-radius: 50%;
+        left:102%;
+        top:-2.5%;
+        width: 30px;
+        height: 30px;
+    }
+    #lightOn h2:nth-child(3){
         margin-bottom: 35%;
     }
 
@@ -308,15 +315,56 @@ header,nav,main,footer,aside,section,article{
     #lightOn span{
         font-family: "Arial Black";
     }
-    #lightOn button:nth-child(3){
+
+    #lightOn button a{
+        text-decoration: none;
+    }
+    .yesButton{
         color: green;
     }
-    #lightOn button:nth-child(4){
+    .noButton{
         color: red;
     }
+    .addList{
+        margin-top:10%;
+        list-style: none;
+        width:100%;
+    }
+    .addList li{
+        padding-top: 15px;
+        height: 40px;
+        padding-left: 5px;
+        font-family: Arial;
+        font-size: 120%;
+    }
+    .addList article{
+        width:20px;
+        height: 20px;
+        background: white;
+        border-radius: 2px;
+        border:1px solid black;
+        float: right;
+        margin-right: 3%;
+        text-align: center;
+        font-size: 90%;
+    }
+    .addList button{
+        width:32px;
+        height: 32px;
+        border-radius: 50%;
+        position: absolute;
 
-
-
+        font-size: 130%;
+        color: white;
+    }
+    .addList button:first-child{
+        background: orange;
+        left: 35%;
+    }
+    .addList button:nth-child(2){
+        background: red;
+        left: 55%;
+    }
 }
 
 @media (min-width:737px) {

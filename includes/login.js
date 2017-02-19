@@ -14,7 +14,7 @@ $(document).ready(function () {
             cache: true,
             success: function(data){
                 if(data=="true")
-                     window.location.href = "layout1.html?id=" + userId;
+                     window.location.href = "index.html?id=" + userId;
             }
 
         });

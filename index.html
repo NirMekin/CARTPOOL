@@ -1,29 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta charset="UTF-8">
         <title>CARTPOOL</title>
         <script src="includes/jquery-3.1.1.min.js"></script>
+        <script src="includes/loginCheck.js"></script>
         <link rel="stylesheet" href="includes/style.css">
-        <script src="includes/login.js"></script>
+        <script src="includes/selectionJS.js"></script>
     </head>
+
     <body>
-        <h1>Welcome To CARTPOOL</h1>
 
-        <form method="POST" action="#">
+        <div id="wrapper">
 
-            <section id="startFlow">
-                <img src="images/CartPoolLogo.png">
-                <label>
-                    <select name="client">
-                        <option value="111">Flow A</option>
-                        <option value="222" >Flow B</option>
-                        <!--<option value="3">Flow C</option>-->
-                    </select>
-                </label>
-                <label><input type="submit" value="LOGIN"></label>
+            <header>
+                <section id="clientPic"></section>
+                <section></section>
+                <section></section>
+                <a id="logo" href="#"></a>
+            </header>
+
+            <nav>
+                <section id="hamburger">
+                    <ul>
+                        <li>
+                            <a href="#"></a>
+                            <a href="#"></a>
+                            <article class="profileName"></article>
+                        </li>
+                        <li><img src="images/iconHome.png">Home</li>
+                        <li><img src="images/iconMyAccount.png">My Account</li>
+                        <li><img src="images/iconNotification.png">My Notification</li>
+                        <li><img src="images/iconHistory.png">My History</li>
+                        <li><img src="images/iconInfo.png">Information</li>
+                    </ul>
+                </section>
+                <form method="" action="#">
+                    <label for=searchBar id="searchLabel"></label>
+                    <input id="searchBar" type="text" name="search" placeholder="Search..">
+                </form>
+                <section>Easy Share For Easy Life</section>
+            </nav>
+            <section id="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>My Account</li>
+                    <li>My Notification</li>
+                    <li>My History</li>
+                    <li>Information</li>
+                </ul>
             </section>
-        </form>
+            <main>
+                <h1>Who Are You Today?</h1>
+                <section id="selection">
+                    <a href="layout1.html">I Make The Shop</a>
+                    <article>OR</article>
+                    <a href="layout2.html">I Make The Order</a>
+                </section>
+            </main>
+
+        </div>
+
     </body>
 </html>

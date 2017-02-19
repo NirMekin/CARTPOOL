@@ -11,6 +11,7 @@ header,nav,main,footer,aside,section,article{
     height: 150px;
     left:30%;
 }
+
 #startFlow img{
     margin-top: 5%;
     width:35%;
@@ -23,12 +24,30 @@ header,nav,main,footer,aside,section,article{
     font-size: 120%;
     padding-left: 30px;
 }
+#startFlow input{
+    position: relative;
+    left:-30px;
+    top: 15%;
+}
+#wrapper2{
+    width:350px;
+    background: whitesmoke;
+    margin-left: 25%;
+    height: 550px;
+
+}
+#wrapper2 h1{
+    margin-top: 15%;
+}
 @media (max-width:736px) {
 
 
     body{
         background: #f7f6f6;
         height: 750px;
+    }
+    #menu{
+        display: none;
     }
 
     #wrapper{
@@ -64,8 +83,22 @@ header,nav,main,footer,aside,section,article{
     header section:nth-child(2){
          background: url("../images/iconHeart.png") no-repeat center;
          background-size: 100%;
+        text-align: center;
+
 
      }
+    header section p{
+        margin-top:29px;
+        color: whitesmoke;
+        font-size: 79%;
+        margin-left:-2px;
+    }
+    header section article{
+        margin-top:29px;
+        color: black;
+        font-size: 85%;
+        margin-left:-2px;
+    }
     header section:nth-child(3){
         background: url("../images/discountIcon.png") no-repeat center;
         background-size: 70%;
@@ -81,10 +114,14 @@ header,nav,main,footer,aside,section,article{
         height: 100%;
     }
     #searchBar{
+        position: absolute;
         visibility: hidden;
-        height: 50%;
+        height: 6%;
+        left:5%;
+        margin-top: 1%;
         border-radius: 5px;
         outline: none ;
+        width: 82.5%;
         border:1px orange solid;
 
     }
@@ -95,18 +132,20 @@ header,nav,main,footer,aside,section,article{
         animation: openSearch 1s 1;
 
     }
+
     @keyframes openSearch {
         from{width:0px;border:none;}
-        to{width:100%;border:1px orange solid; }
+        to{width:82%;border:1px orange solid; }
     }
 
 
     #searchLabel{
-        width:30px;
-        height: 30px;
-        margin-top: 4.5%;
+        width:25px;
+        height: 25px;
+        margin-top: 25%;
         display: block;
         float: right;
+        margin-right: 5%;
         background: url("../images/iconSearch.png") no-repeat center;
         background-size: 50%;
         border: 1px solid gray;
@@ -191,6 +230,11 @@ header,nav,main,footer,aside,section,article{
         height: 100%;
         background: url("../images/icomMan.png") no-repeat center;
         background-size: 20%;
+    }
+    nav section:nth-child(3){
+        color: orange;
+        margin-top: 2%;
+        margin-right: 7%;
     }
 
     main{
@@ -290,6 +334,9 @@ header,nav,main,footer,aside,section,article{
     #lightOn h2{
         text-align: center;
     }
+    #lightOn h3{
+        text-align: center;
+    }
     #lightOn button:first-child{
         position: absolute;
         border-radius: 50%;
@@ -365,10 +412,871 @@ header,nav,main,footer,aside,section,article{
         background: red;
         left: 55%;
     }
+
+    #startFlow input[type="submit"]{
+        margin-top: 5%;
+        margin-left: 5%;
+        width: 150px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 130%;
+    }
+    #addTiemandDate{
+        margin-left: 30%;
+        margin-top: 5%;
+        width:150px;
+        height: 50px;
+        border-radius: 5px;
+        background: darkorange;
+        color: white;
+    }
+    #submitCartData{
+        display: none;
+        width:100%;
+        margin-left:5%;
+        margin-top: 5%;
+    }
+    #submitCartData label{
+        font-size: 150%;
+        margin-right: 2.5%;
+    }
+    #submitCartData input{
+        border: 1px solid black;
+        text-align: center;
+    }
+    #submitCartData input[type="submit"]{
+        position: fixed;
+        bottom: 50px;
+        left:29%;
+        width: 150px;
+        height: 50px;
+        background: blue;
+        font-size: 150%;
+        border-radius: 5px;
+        color: white;
+    }
+    #missingData {
+        display: none;
+        text-align: center;
+        color: red;
+        font-size: 150%;
+        animation: missinD 1s infinite;
+        font-family: "Arial Black";
+        transition: 1s;
+    }
+    @keyframes missinD {
+        0%{color:red;}
+        12.5%{color:red;font-size: 155%}
+        25%{color:darkred;font-size: 160%}
+        37.5%{color:darkred;font-size: 165%}
+        50%{color:darkred;font-size: 170%}
+        62.5%{color:darkred;font-size: 165%}
+        75%{color:darkred;font-size: 160%}
+        87.5%{color:red;font-size: 155%}
+        100%{color:red;font-size: 152.5%}
+
+    }
+    main>p{
+        text-align: center;
+        font-size: 130%;
+        margin-top: 5%;
+    }
+    #endButton{
+        position: relative;
+        top:50px;
+        width: 100%;
+
+    }
+    #endButton img{
+        width: 20%;;
+        position: absolute;
+        left:40%;
+
+    }
+    #endButton a{
+        top:145px;
+        display: block;
+        position: absolute;
+        height: 30px;
+        width: 30%;
+        border-radius: 5px;
+        color: white;
+        font-size: 120%;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 10px;
+    }
+    #endButton a:nth-child(2){
+        left:10%;
+        background: #ffb253;
+    }
+    #endButton a:nth-child(3){
+        left:60%;
+        background: #444444;
+    }
+    #mainDeliverButtons{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        padding-left: 3%;
+        background: #ebebeb;
+    }
+    #mainDeliverButtons a{
+        display: block;
+        float: left;
+        width: 20%;
+        height: 50px;
+        background-size: 45%;
+        margin-right: 2.5%;
+    }
+    #mainDeliverButtons a:nth-child(1){
+        background: url("../images/iconCartList.png") center no-repeat;
+    }
+    #mainDeliverButtons a:nth-child(2){
+        background: url("../images/iconCartAdd.png") center no-repeat;
+    }
+    #mainDeliverButtons a:nth-child(3){
+        background: url("../images/saleIcon.png") center no-repeat;
+    }
+    #mainDeliverButtons a:nth-child(4){
+        background: url("../images/iconCashier.png") center no-repeat;
+    }
+
+    .addCart{
+        position: relative;
+        width:100%;
+        height: 400px;
+        margin-top: 15%;
+        background: white;
+        padding-left: 15%;
+    }
+    .addCart section{
+        height: 150px;
+        width: 150px;
+        float: left;
+        padding-top: 15%;
+        background: url("../images/note.png") center no-repeat;
+        background-size:75%;
+
+    }
+    .addCart section p{
+
+        text-align: center;
+        font-size: 110%;
+        color: white;
+    }
+    #insertDataHere{
+        margin-top: -25%;
+    }
+    #insertDataHere p{
+        text-align: center;
+        font-size: 110%;
+    }
+    #mainDeliverButtons a{
+        text-decoration: none;
+    }
+    #mainDeliverButtons a>span{
+        display: none;
+        width: 100%;
+        position: relative;
+        color: red;
+        top:-35px;
+        left:59%;
+        font-size: 350%;
+        transition: 5s;
+
+
+    }
+    #cartListsForDeliver ul{
+        list-style: none;
+        width: 100%;
+        font-size: 180%;
+        margin-top:10%;
+
+    }
+    #cartListsForDeliver li{
+        height: 40px;
+        padding-top: 10px;
+    }
+    #cartListsForDeliver li:first-child{
+        background: orange;
+        font-size: 110%;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    #cartListsForDeliver li p:nth-child(1){
+        float: left;
+        margin-left: 20%;
+        width: 30%;
+    }
+    #cartListsForDeliver li p:nth-child(2){
+        float: right;
+        text-align: center;
+        width: 50%;
+    }
+    #discount{
+        margin-top:15%;
+        width: 100%;
+    }
+    #discount h2,#discount h3{
+        text-align: center;
+        margin-bottom:10px;
+    }
+    #discount h2{
+        color: #606060;
+    }
+    #discount button{
+        width:25%;
+        height: 40px;
+        position: relative;
+        left:25%;
+        top:85px;
+        border-radius: 4px;
+        font-size: 150%;
+    }
+    #discount button:nth-child(4){
+        color: green;
+    }
+    #discount button:nth-child(5){
+        color: red;
+    }
+    .progress{
+        width:70%;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    .progress-bar{
+        animation: progress1 5s 1;
+    }
+    @keyframes progress1 {
+        from{width: 0%}
+        to{width:100%;}
+    }
+    main>h4{
+        text-align: center;
+        margin-top: 15%;
+    }
+    main>h4 span{
+        display: none;
+    }
+    #EndDeliver{
+        text-align: center;
+        margin-top: 15%;
+    }
+    #EndDeliver p{
+        margin-top: 15%;
+        color: orange;
+    }
+
 }
 
 @media (min-width:737px) {
     body{
+        background: gray;
+        height: 750px;
+
+    }
+
+    #wrapper{
+        background: #f7f6f6;
+        width:750px;
+        height: 100%;
+        margin: auto;
+    }
+
+    header{
+        width:60%;
+        height: 10%;
+        background: #ebebeb;
+        float: right;
+    }
+
+    #logo{
+        display: block;
+        width:40%;
+        height: 100%;
+        background: url("../images/CartPoolLogo.png") no-repeat center;
+        background-size: 60% ;
+        margin-left: 1.5%;
+    }
+
+    header section{
+        float: right;
+        width: 10.5%;
+        height: 100%;
+        margin-right: 2.5%;
+    }
+    header section:nth-child(1){
+        background: url("../images/icomMan.png") no-repeat center;
+        background-size: 80%;
+    }
+    header section:nth-child(2){
+        background: url("../images/iconHeart.png") no-repeat center;
+        background-size: 100%;
+        text-align: center;
+
+
+    }
+    header section p{
+        margin-top:29px;
+        color: whitesmoke;
+        font-size: 79%;
+        margin-left:-2px;
+    }
+    header section article{
+        margin-top:29px;
+        color: black;
+        font-size: 85%;
+        margin-left:-2px;
+    }
+    header section:nth-child(3){
+        background: url("../images/discountIcon.png") no-repeat center;
+        background-size: 70%;
+    }
+
+    nav{
+        width: 40%;
+        height: 10%;
+        background: #ebebeb;
+        float: left;
+    }
+    nav section,nav form, nav input{
+        float: right;
+        height: 100%;
+    }
+    #searchBar{
+        position: relative;
+
+        height: 20px;
+        left:-15px;
+        top:28px;
+        border-radius: 5px;
+        outline: none ;
+        width: 250px;
+        border:1px orange solid;
+
+    }
+
+
+
+
+
+    #searchLabel{
+       display: none;
+    }
+
+    nav section:first-child{
+        display: none;
+
+    }
+    nav section:first-child:hover{
+        background-color: grey;
+        background-image: url("../images/iconHamburger2.png");
+        transition: 2s;
+    }
+
+
+    nav section:first-child  li img{
+        width: 12%;
+        height: 100%;
+        float: left;
+        margin-right: 10%;
+        margin-left: 2.5%;
+        margin-top: -3%;
+    }
+
+
+    nav li:first-child a:first-child{
+        background: url("../images/iconLogout.png") no-repeat center;
+        background-size: 90%;
+        float: right;
+    }
+    nav li:first-child a:nth-child(2){
+        background: url("../images/iconSettings.png") no-repeat center;
+        margin-left: 2.5%;
+        background-size: 90%;
+        float: left;
+    }
+    nav li:first-child a{
+        display: block;
+        width:40px;
+        height: 40px;
+    }
+    nav li:first-child article{
+        text-align: center;
+        font-size: 110%;
+        height: 100%;
+        background: url("../images/icomMan.png") no-repeat center;
+        background-size: 20%;
+    }
+    nav section:nth-child(3){
+        color: orange;
+        display: none;
+        margin-top: 2%;
+        margin-right: 7%;
+    }
+
+    main{
+        padding-top: 5%;
+    }
+
+    h1{
+        text-align: center;
+        color: #606060;
+        font-family: Georgia;
+        margin-top: 15%;
+    }
+    #selection{
+        text-align: center;
+        width: 100%;
+        margin-top: 10%;
+    }
+    #selection a{
+        display: block;
+        text-decoration: none;
+        color: #606060;
+        background: #ebebeb;
+        height: 40px;
+        padding-top: 20px;
+        font-size: 160%;
+    }
+    #selection article{
+        margin-top: 2.5%;
+        margin-bottom: 2.5% ;
+        font-size: 120% ;
+        background: url("../images/backgroundOr.png") no-repeat center;
+        background-size: 100%;
+        color: #7a7a7a;
+    }
+    #selcetMethod{
+        width: 550px;
+
+        position: relative;
+        left: 8%;
+    }
+    #selcetMethod span{
+        position: relative;
+        display: block;
+        text-align: center;
+        top:78%;
+        font-family: Arial;
+        z-index: 2;
+    }
+    #selcetMethod a{
+        display: block;
+        width: 40%;
+        height: 150px;
+        float: left;
+        margin-left: 9%;
+        margin-bottom: 2%;
+        margin-top: 10%;
+        background: white no-repeat;
+        border-radius: 4px;
+        border:1px black solid;
+        background-size: 25%;
+        background-position: center;
+        text-decoration: none;
+        color: black;
+    }
+    #selcetMethod a:first-child{
+        background-image: url("../images/iconList.png");
+
+    }
+    #selcetMethod a:nth-child(2){
+        background-image: url("../images/iconSale.png");
+    }
+    #selcetMethod a:nth-child(3){
+        background-image: url("../images/favoriteIcon.png");
+    }
+    #selcetMethod a:nth-child(4){
+        background-image: url("../images/cartIcon.png");
+    }
+
+    #lightbox{
+        top: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.3);
+        display: none;
+        width:100%;
+        height: 950px;
+    }
+    #lightOn{
+        position: relative;
+        top:18%;
+        left:-10%;
+        padding-top: 10px;
+        background: lightgrey;
+        border-radius: 5px;
+        width:65%;
+        height: 350px;
+        z-index: 40;
+    }
+
+    #lightOn h2{
+        text-align: center;
+    }
+    #lightOn h3{
+        text-align: center;
+    }
+    #lightOn button:first-child{
+        position: absolute;
+        border-radius: 50%;
+        left:102%;
+        top:-2.5%;
+        width: 30px;
+        height: 30px;
+    }
+    #lightOn h2:nth-child(3){
+        margin-bottom: 35%;
+    }
+
+    #lightOn button{
+        position: relative;
+        left: 20%;
+        height: 45px;
+        margin-right: 5%;
+        width: 25%;
+        font-size: 110%;
+        background: white;
+        border-radius: 15%;
+    }
+    #lightOn span{
+        font-family: "Arial Black";
+    }
+
+    #lightOn button a{
+        text-decoration: none;
+    }
+    .yesButton{
+        color: green;
+    }
+    .noButton{
+        color: red;
+    }
+    .addList{
+        margin-top:10%;
+        list-style: none;
+        width:100%;
+    }
+    .addList li{
+        padding-top: 15px;
+        height: 40px;
+        padding-left: 5px;
+        font-family: Arial;
+        font-size: 120%;
+    }
+    .addList article{
+        width:20px;
+        height: 20px;
+        background: white;
+        border-radius: 2px;
+        border:1px solid black;
+        float: right;
+        margin-right: 3%;
+        text-align: center;
+        font-size: 90%;
+    }
+    .addList button{
+        width:32px;
+        height: 32px;
+        border-radius: 50%;
+        position: absolute;
+
+        font-size: 130%;
+        color: white;
+    }
+    .addList button:first-child{
+        background: orange;
+        left: 35%;
+    }
+    .addList button:nth-child(2){
+        background: red;
+        left: 55%;
+    }
+
+    #startFlow input[type="submit"]{
+        margin-top: 5%;
+        margin-left: 15%;
+        width: 150px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 130%;
+    }
+    #addTiemandDate{
+        margin-left: 37%;
+        margin-top: 5%;
+        width:150px;
+        height: 50px;
+        border-radius: 5px;
+        background: darkorange;
+        color: white;
+    }
+    #submitCartData{
+        display: none;
+        width:100%;
+        margin-left:5%;
+        margin-top: 5%;
+    }
+    #submitCartData label{
+        font-size: 150%;
+        margin-right: 2.5%;
+    }
+    #submitCartData input{
+        border: 1px solid black;
+        text-align: center;
+    }
+    #submitCartData input[type="submit"]{
+        position: fixed;
+        bottom: 150px;
+        left:38%;
+        width: 150px;
+        height: 50px;
+        background: blue;
+        font-size: 150%;
+        border-radius: 5px;
+        color: white;
+    }
+    #missingData {
+        display: none;
+        text-align: center;
+        color: red;
+        font-size: 150%;
+        margin-left: -15px;
+        animation: missinD 1s infinite;
+        font-family: "Arial Black";
+        transition: 1s;
+    }
+    @keyframes missinD {
+        0%{color:red;}
+        12.5%{color:red;font-size: 155%}
+        25%{color:darkred;font-size: 160%}
+        37.5%{color:darkred;font-size: 165%}
+        50%{color:darkred;font-size: 170%}
+        62.5%{color:darkred;font-size: 165%}
+        75%{color:darkred;font-size: 160%}
+        87.5%{color:red;font-size: 155%}
+        100%{color:red;font-size: 152.5%}
+
+    }
+    main>p{
+        text-align: center;
+        font-size: 130%;
+        margin-top: 5%;
+    }
+    #endButton{
+        position: relative;
+        top:50px;
+        width: 100%;
+
+    }
+    #endButton img{
+        width: 20%;;
+        position: absolute;
+        left:40%;
+
+    }
+    #endButton a{
+        top:145px;
+        display: block;
+        position: absolute;
+        height: 30px;
+        width: 30%;
+        border-radius: 5px;
+        color: white;
+        font-size: 120%;
+        text-decoration: none;
+        text-align: center;
+        padding-top: 10px;
+    }
+    #endButton a:nth-child(2){
+        left:10%;
+        background: #ffb253;
+    }
+    #endButton a:nth-child(3){
+        left:60%;
+        background: #444444;
+    }
+    #mainDeliverButtons{
+        position: fixed;
+        bottom: 0px;
+        width:705px;
+        padding-left: 3%;
+        background: #ebebeb;
+    }
+    #mainDeliverButtons a{
+        display: block;
+        float: left;
+        width: 20%;
+        height: 50px;
+        background-size: 45%;
+        margin-right: 2.5%;
+    }
+    #mainDeliverButtons a:nth-child(1){
+        background: url("../images/iconCartList.png") center no-repeat;
+    }
+    #mainDeliverButtons a:nth-child(2){
+        background: url("../images/iconCartAdd.png") center no-repeat;
+    }
+    #mainDeliverButtons a:nth-child(3){
+        background: url("../images/saleIcon.png") center no-repeat;
+    }
+    #mainDeliverButtons a:nth-child(4){
+        background: url("../images/iconCashier.png") center no-repeat;
+    }
+
+    .addCart{
+        position: relative;
+        width:80%;
+        height: 400px;
+        margin-top: 15%;
+        background: white;
+        left:10%
+    }
+    .addCart section{
+        height: 150px;
+        width: 150px;
+        float: left;
+        padding-top: 5%;
+        margin-left: 15%;
+        background: url("../images/note.png") center no-repeat;
+        background-size:95%;
+
+    }
+    .addCart section p{
+
+        text-align: center;
+        font-size: 125%;
+        color: white;
+    }
+    #insertDataHere{
+        margin-top: -25%;
+    }
+    #insertDataHere p{
+        text-align: center;
+        font-size: 110%;
+    }
+    #mainDeliverButtons a{
+        text-decoration: none;
+    }
+    #mainDeliverButtons a>span{
+        display: none;
+        width: 100%;
+        position: relative;
+        color: red;
+
+        font-size: 350%;
+        transition: 5s;
+
+
+    }
+    #cartListsForDeliver ul{
+        list-style: none;
+        width: 100%;
+        font-size: 180%;
+        margin-top:10%;
+
+    }
+    #cartListsForDeliver li{
+        height: 40px;
+        padding-top: 10px;
+    }
+    #cartListsForDeliver li:first-child{
+        background: orange;
+        font-size: 110%;
+        text-align: center;
+        color: whitesmoke;
+    }
+
+    #cartListsForDeliver li p:nth-child(1){
+        float: left;
+        margin-left: 20%;
+        width: 30%;
+    }
+    #cartListsForDeliver li p:nth-child(2){
+        float: right;
+        text-align: center;
+        width: 50%;
+    }
+    #discount{
+        margin-top:15%;
+        width: 100%;
+    }
+    #discount h2,#discount h3{
+        text-align: center;
+        margin-bottom:10px;
+    }
+    #discount h2{
+        color: #606060;
+    }
+    #discount button{
+        width:25%;
+        height: 40px;
+        position: relative;
+        left:25%;
+        top:85px;
+        border-radius: 4px;
+        font-size: 150%;
+    }
+    #discount button:nth-child(4){
+        color: green;
+    }
+    #discount button:nth-child(5){
+        color: red;
+    }
+    .progress{
+        width:70%;
+        margin-left: 15%;
+        margin-top: 15%;
+    }
+    .progress-bar{
+        animation: progress1 5s 1;
+    }
+    @keyframes progress1 {
+        from{width: 0%}
+        to{width:100%;}
+    }
+    main>h4{
+        text-align: center;
+        margin-top: 15%;
+    }
+    main>h4 span{
         display: none;
     }
+    #EndDeliver{
+        text-align: center;
+        margin-top: 15%;
+    }
+    #EndDeliver p{
+        margin-top: 15%;
+        color: orange;
+    }
+    #menu{
+        position: absolute;
+        top:10%;
+        border-bottom:1px solid orange;
+        border-top:0.5px solid orange;
+        height: 20px;
+        width:750px;
+    }
+    #menu ul{
+        list-style: none;
+        width: 100%;
+    }
+    #menu li{
+        text-align: center;
+        width:20%;
+        height: 22px;
+        float: left;
+        background: lightsalmon;
+        transition: 2s;
+    }
+    #menu li:hover{
+        background: orange;
+        color: whitesmoke;
+    }
+    footer{
+
+    }
+
 }

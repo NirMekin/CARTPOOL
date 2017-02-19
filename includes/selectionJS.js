@@ -4,7 +4,7 @@
  var parseData = (function () {
     var data = window.location.search.substring(1);
     data = data.split('=');
-     console.log(data[1]);
+     // console.log(data[1]);
     return data[1];
 }());
 
